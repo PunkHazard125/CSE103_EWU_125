@@ -1,2 +1,3 @@
 # CSE103_EWU_125
-EWU CSE103 Lab Codes
+
+EWU Fall 2023 Semester CSE103 Section 15 Lab Codes
