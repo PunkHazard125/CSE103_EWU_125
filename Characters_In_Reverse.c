@@ -15,7 +15,7 @@ int main() {
     scanf("%c", &input3);
     scanf("%c", &input3);
 
-    printf("The Reverse of ESC is: %c%c%c", input3, input2, input1);
+    printf("The Reverse of %c%c%c is: %c%c%c", input1, input2, input3, input3, input2, input1);
 
     return 0;
 }
