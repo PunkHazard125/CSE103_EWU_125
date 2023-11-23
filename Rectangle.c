@@ -3,19 +3,19 @@
 
 int main() {
     
-    int height, width;
+    float height, width;
 
     printf("Enter Height in Inches: ");
-    scanf("%d", &height);
+    scanf("%f", &height);
 
     printf("Enter Width in Inches: ");
-    scanf("%d", &width);
+    scanf("%f", &width);
 
-    int perimeter = 2 * (height + width);
-    int area = height * width;
+    float perimeter = 2.00 * (height + width);
+    float area = height * width;
 
-    printf("Perimeter of the rectangle is %d inches\n", perimeter);
-    printf("Area of the rectangle is %d square inches\n", area);
+    printf("Perimeter of the rectangle is %.2f inches\n", perimeter);
+    printf("Area of the rectangle is %.2f square inches\n", area);
 
     return 0;
 }
