@@ -4,21 +4,18 @@ int main() {
 
     int num1, num2;
 
-    printf("Enter 1st Number: ");
+    printf("Enter lower limit: ");
     scanf("%d", &num1);
-    printf("Enter 2nd Number: ");
+    printf("Enter higher limit: ");
     scanf("%d", &num2);
 
-    if (num2 % 2 == 0)
+    for (int i = num2; i >= num1; i--)
     {
-        num2 = num2 - 1;
-    }
-    while (num2 >= num1)
-    {
-        printf("%d ", num2);
-        num2 = num2 - 2;
+        if (i % 2 != 0)
+        {
+            printf("%d ", i);
+        }
     }
     
     return 0;
-
 }
