@@ -33,7 +33,7 @@ int main() {
         if (num2 != 0)
         {
             result = num1 / num2;
-        printf("Result: %d\n", result);
+            printf("Result: %d\n", result);
         }
         else
         {
@@ -54,5 +54,4 @@ int main() {
     }
         
     return 0;
-
 }
