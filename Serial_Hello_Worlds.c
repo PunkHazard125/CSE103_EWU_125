@@ -10,7 +10,7 @@ int main() {
         {
             continue;
         }
-        printf("%d. Hello World\n", i);
+        printf("%2d. Hello World\n", i);
         
     }
        
