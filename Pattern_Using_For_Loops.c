@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main() {
+    
+    int row;
+    printf("Row: ");
+    scanf("%d", &row);
 
-    int row = 5;
     int num = 1;
 
     for (int i = 1; i <= row; i++)
@@ -16,5 +19,4 @@ int main() {
     }
     
     return 0;
-
 }
