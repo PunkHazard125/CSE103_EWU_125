@@ -1,22 +1,21 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     
-    int num1, num2;
+    int low, high;
 
-    printf("Enter first number: ");
-    scanf("%d", &num1);
-    printf("Enter second number: ");
-    scanf("%d", &num2);
+    printf("Enter lower limit: ");
+    scanf("%d", &low);
+    printf("Enter higher limit: ");
+    scanf("%d", &high);
 
-    int flag = 1;
+    int is_prime = 1;
 
-    printf("Prime numbers between %d and %d are:\n", num1, num2);
-    
-    for (int i = num1; i <= num2; i++)
+    printf("The prime numbers between %d and %d are: \n", low, high);
+
+    for (int i = low; i <= high; i++)
     {
-        flag = 1;
+        is_prime = 1;
         if (i <= 1)
         {
             continue;
@@ -27,16 +26,15 @@ int main() {
             {
                 if (i % j == 0)
                 {
-                    flag = 0;
-                    break;
+                    is_prime = 0;
                 }
             }
-            if (flag == 1)
-            {
-                printf("%d ", i);
-            }
+        }
+        if (is_prime == 1)
+        {
+            printf("%d ", i);
         }
     }
-    
+
     return 0;
 }
