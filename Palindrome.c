@@ -3,39 +3,29 @@
 
 int main() {
     
-    int num1;
-    
-    printf("Enter number: ");
-    scanf("%d", &num1);
-    
-    int digit = 0;
-    int num2 = num1;
-    
-    while (num2 > 0)
-    {
-        num2 = num2 / 10;
-        digit++;
-    }
-    
-    num2 = num1;
+    int original_num;
 
-    int num3 = 0;
+    printf("Enter a number: ");
+    scanf("%d", &original_num);
+
+    int test_num = original_num;
+    int sum = 0;
     int current_digit;
 
-    for (int i = digit; i > 0; i--)
+    while (test_num >= 1)
     {
-        current_digit = num2 % 10;
-        num3 = (num3 * 10) + current_digit;
-        num2 = num2 / 10;
+        current_digit = test_num % 10;
+        sum = (sum * 10) + current_digit;
+        test_num = test_num / 10;
     }
     
-    if (num3 == num1)
+    if (sum == original_num)
     {
-        printf("%d is a palindrome number\n", num1);
+        printf("%d is a palindrome number\n", original_num);
     }
     else
     {
-        printf("%d is not a palindrome number\n", num1);
+        printf("%d is not a palindrome number\n", original_num);
     }
     
     return 0;
